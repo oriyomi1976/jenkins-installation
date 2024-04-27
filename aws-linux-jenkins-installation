@@ -1,0 +1,12 @@
+1.sudo dnf update
+2. sudo dnf install java-17-amazon-corretto -y
+3. java -version
+4. sudo wget -O /etc/yum.repos.d/jenkins.repo \
+    https://pkg.jenkins.io/redhat-stable/jenkins.repo
+
+5. sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+6. sudo dnf install jenkins -y
+7. sudo systemctl enable jenkins
+8. sudo systemctl start jenkins
+9, http://your_amazon_linux_instance_ip:8080
+10. sudo cat /var/lib/jenkins/secrets/initialAdminPassword
